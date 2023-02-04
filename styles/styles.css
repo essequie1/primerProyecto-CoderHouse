@@ -375,7 +375,7 @@ main {
 
 .cardsContainer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10rem;
   margin-top: 2rem;
   margin-bottom: 6rem;
@@ -712,7 +712,7 @@ main {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 500px);
   gap: 2rem;
-  width: 65vw;
+  width: 100vw;
   justify-items: center;
 }
 
@@ -722,7 +722,7 @@ main {
 }
 
 .postCard {
-  width: 360px;
+  width: 400px;
   display: flex;
 }
 
@@ -857,6 +857,7 @@ main {
   .cardsContainer {
     margin-top: -20px;
     gap: 100px;
+    flex-direction: column;
   }
 
   .requirementsSection {
@@ -920,5 +921,55 @@ main {
   .postCard {
     gap: 0;
     width: 80vw;
+  }
+}
+
+@media (max-width: 1450px) {
+  /* INDEX */
+  .trailerVideo {
+    width: 80vw;
+  }
+  .trailerText {
+    width: 80vw;
+  }
+  .board {
+    width: 80vw;
+  }
+
+  /* PRE-ORDER */
+  .cardsContainer {
+    margin-top: -20px;
+    gap: 100px;
+    flex-direction: column;
+  }
+
+  .requirementsSection {
+    width: 100%;
+    padding: 0 50px 50px 50px;
+    margin-top: -70px;
+  }
+
+  .accordion-button {
+    padding: 0;
+  }
+
+  .requirements {
+    margin-bottom: 50px;
+  }
+  /* COMMUNITY */
+  .callToAction {
+    flex-direction: column;
+  }
+
+  .btnContainer {
+    border: 4px dashed #f3ca28;
+  }
+
+  .postSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
   }
 }
