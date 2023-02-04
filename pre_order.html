@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" /><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /><link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,400;0,600;0,700;0,900;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <style>
+      .pageTitle::after {
+        background-image: url(../media/images/decoration2.png);
+        width: 195px;
+      }
+    </style>
+    <title>Pre Order the Game!</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="./index.html"><img class="logo" src="media/images/logo.png" alt="" /></a>
+      <nav class="nav">
+        <div class="preorder">
+          <a href="./pre_order.html" class="preorderBtn">PRE ORDER NOW!</a>
+        </div>
+        <div class="navButtons">
+          <a href="./gallery.html" class="navBtn">GALLERY</a>
+          <a href="./community.html" class="navBtn">COMMUNITY</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <h1 class="pageTitle">PRE-ORDER</h1>
+      <section class="cardsContainer d-flex flex-md-row">
+        <div class="cards">
+          <h2 class="cardTitle">STANDARD</h2>
+          <h3 class="edition">EDITION</h3>
+          <img class="cardImg" src="media/images/standard.png" alt="" />
+          <div class="cardButtons">
+            <button class="cardBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapseExample">
+              DETAILS
+            </button>
+          </div>
+          <div class="collapse" id="collapse1">
+            <div class="collapsedInfo">
+              <p>This version of the game includes the digital copy of the game.</p>
+              <button class="collapsedBtn">PURCHASE</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <h2 class="cardTitle">LIMITED</h2>
+          <h3 class="edition">EDITION</h3>
+          <img class="cardImg" src="media/images/deluxe.png" alt="" />
+          <div class="cardButtons">
+            <button class="cardBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapseExample">
+              DETAILS
+            </button>
+          </div>
+          <div class="collapse" id="collapse2">
+            <div class="collapsedInfo">
+              <p>This version of the game includes the digital copy of the game, and 2 exclusive in-game skins of Harley Quinn and Deadshot.</p>
+              <button class="collapsedBtn">PURCHASE</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards">
+          <h2 class="cardTitle">COLLECTOR'S</h2>
+          <h3 class="edition">EDITION</h3>
+          <img class="cardImg" src="media/images/collectors.png" alt="" />
+          <div class="cardButtons">
+            <button class="cardBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapseExample">
+              DETAILS
+            </button>
+          </div>
+          <div class="collapse" id="collapse3">
+            <div class="collapsedInfo">
+              <p>
+                This version of the game includes the digital and physical copy of the game, all the perks from the Limited Edition, and 4 EXCLUSIVE action
+                figures of Batman, Superman, Flash and Wonderwoman
+              </p>
+              <button class="collapsedBtn">PURCHASE</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="requirementsSection">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <button
+              class="accordion-button requirementsBtn"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              <h2 class="accordion-header requirementsTitle">SYSTEM REQUIREMENTS</h2>
+            </button>
+            <div id="collapseOne" class="requirementsContainer accordion-collapse collapse justify-content-around">
+              <div class="requirements">
+                <h4 class="requirementsName">MINIMUM</h4>
+                <ul class="requirementsInfo">
+                  <li>OS: Windows 10 64-bit</li>
+                  <li>CPU: Intel Core i5-6600 or AMD Ryzen 5 2400G</li>
+                  <li>RAM: 8GB</li>
+                  <li>GPU: GeForce GTX 780 or Radeon R9 290X</li>
+                  <li>DirectX: DX11</li>
+                  <li>Storage: HDD, 35 GB available</li>
+                </ul>
+              </div>
+              <div class="requirements">
+                <h4 class="requirementsName">RECOMMENDED</h4>
+                <ul class="requirementsInfo">
+                  <li>OS: Windows 10 64-bit</li>
+                  <li> CPU: Intel Core i5-8400 or AMD Ryzen 3 3100</li>
+                  <li>RAM: 8GB</li>
+                  <li> GPU: GeForce GTX 1060 or Radeon RX 590</li>
+                  <li>DirectX: DX11</li>
+                  <li>Storage: HDD, 35 GB available</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="socialsContainer">
+        <img class="icon socials" src="media/images/instagram.png" alt="" />
+        <img class="icon socials" src="media/images/twitter.png" alt="" />
+        <img class="icon socials" src="media/images/facebook.png" alt="" />
+        <img class="icon socials" src="media/images/youtube.png" alt="" />
+        <img class="icon socials" src="media/images/discord.png" alt="" />
+      </div>
+      <div class="studiosContainer">
+        <img class="icon studios" src="media/images/wbgames.png" alt="" />
+        <img class="icon studios" src="media/images/dccomics.png" alt="" />
+        <img class="icon studios inv" src="media/images/rocksteady.png" alt="" />
+      </div>
+      <div class="platformsContainer">
+        <img class="icon platforms inv" src="media/images/ps5dwn.png" alt="" />
+        <img class="icon platforms" src="media/images/xboxdwn.png" alt="" />
+        <img class="icon platforms inv" src="media/images/pcdwn.png" alt="" />
+      </div>
+      <p class="copyright">WB WARNER BROS. GAMES LOGO, WB SHIELD: ™ & © Warner Bros. Entertainment Inc. (s22)</p>
+      <div class="boilerLinks">
+        <a class="boiler" href="">PRIVACY POLICY</a>
+        <a class="boiler" href="">FAQ</a>
+        <a class="boiler" href="">TERMS OF USE</a>
+        <a class="boiler" href="">AD CHOICE</a>
+      </div>
+      <div class="ESRB"><img class="ESRBImg" src="media/images/ESRB.JPG" alt="" /></div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
