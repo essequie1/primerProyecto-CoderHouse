@@ -16,7 +16,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <style>
       .pageTitle::after {
         background-image: url(../media/images/decoration3.png);
@@ -27,34 +27,32 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html"><img class="logo" src="media/images/logo.png" alt="" /></a>
-      <nav class="nav">
-        <div class="preorder">
-          <a href="./pre_order.html" class="preorderBtn">PRE ORDER NOW!</a>
-        </div>
-        <div class="navButtons">
-          <a href="./gallery.html" class="navBtn">GALLERY</a>
-          <a href="./community.html" class="navBtn">COMMUNITY</a>
+      <a href="./index.html"><img class="header__logo" src="media/images/logo.png" alt="" /></a>
+      <nav class="navBar">
+        <a href="./pre_order.html" class="navBar__preorder">PRE ORDER NOW!</a>
+        <div class="navBar__btnContainer">
+          <a href="./gallery.html" class="navBar__btn">GALLERY</a>
+          <a href="./community.html" class="navBar__btn">COMMUNITY</a>
         </div>
       </nav>
     </header>
-    <main class="galleryMain">
+    <main>
       <h1 class="pageTitle">GALLERY</h1>
       <section class="videosSection">
-        <h2 class="videosName">VIDEOS</h2>
-        <div class="container videosContainer">
+        <h2 class="videosSection__title">VIDEOS</h2>
+        <div class="container videosSection__container">
           <div class="row w-100">
             <div class="col-md-6 border-0 mb-4" id="thumbnailContainer">
-              <img src="./media/images/vid1-thumb.jpg" class="vidGal h-100 w-100 img-thumbnail p-0 m-0" onclick="videoModal(0)" />
+              <img src="./media/images/vid1-thumb.jpg" class="h-100 w-100 img-thumbnail p-0 m-0" onclick="videoModal(0)" />
             </div>
             <div class="col-md-6 border-0 mb-4" id="thumbnailContainer">
-              <img src="./media/images/vid2-thumb.jpg" class="vidGal h-100 w-100 img-thumbnail p-0 m-0" onclick="videoModal(1)" />
+              <img src="./media/images/vid2-thumb.jpg" class="h-100 w-100 img-thumbnail p-0 m-0" onclick="videoModal(1)" />
             </div>
             <div class="col-md-6 border-0 mb-4" id="thumbnailContainer">
-              <img src="./media/images/vid3-thumb.jpg" class="vidGal h-100 w-100 img-thumbnail p-0 m-0" onclick="videoModal(2)" />
+              <img src="./media/images/vid3-thumb.jpg" class="h-100 w-100 img-thumbnail p-0 m-0" onclick="videoModal(2)" />
             </div>
             <div class="col-md-6 border-0 mb-4" id="thumbnailContainer">
-              <img src="./media/images/vid4-thumb.jpg" class="vidGal h-100 w-100 img-thumbnail p-0 m-0" onclick="videoModal(3)" />
+              <img src="./media/images/vid4-thumb.jpg" class="h-100 w-100 img-thumbnail p-0 m-0" onclick="videoModal(3)" />
             </div>
           </div>
         </div>
@@ -94,8 +92,8 @@
       </section>
       </section>
       <section class="imagesSection">
-        <h2 class="imagesName">IMAGES</h2>
-        <div class="container imagesContainer">
+        <h2 class="imagesSection__title">IMAGES</h2>
+        <div class="container imagesSection__container">
           <div class="row w-100">
             <div class="col-md-4 border-0 mb-4" id="thumbnailContainer">
               <img src="./media/images/gallery1.jpg" class="imgGal h-100 w-100 img-thumbnail p-0 m-0" onclick="openModal(0)" />
@@ -196,31 +194,31 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="socialsContainer">
-        <img class="icon socials" src="media/images/instagram.png" alt="" />
-        <img class="icon socials" src="media/images/twitter.png" alt="" />
-        <img class="icon socials" src="media/images/facebook.png" alt="" />
-        <img class="icon socials" src="media/images/youtube.png" alt="" />
-        <img class="icon socials" src="media/images/discord.png" alt="" />
+      <div class="footer__socials">
+        <img class="footer__socials__icon" src="media/images/instagram.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/twitter.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/facebook.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/youtube.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/discord.png" alt="" />
       </div>
-      <div class="studiosContainer">
-        <img class="icon studios" src="media/images/wbgames.png" alt="" />
-        <img class="icon studios" src="media/images/dccomics.png" alt="" />
-        <img class="icon studios inv" src="media/images/rocksteady.png" alt="" />
+      <div class="footer__studios">
+        <img class="footer__studios__icon" src="media/images/wbgames.png" alt="" />
+        <img class="footer__studios__icon" src="media/images/dccomics.png" alt="" />
+        <img class="footer__studios__icon" src="media/images/rocksteady.png" alt="" />
       </div>
-      <div class="platformsContainer">
-        <img class="icon platforms inv" src="media/images/ps5dwn.png" alt="" />
-        <img class="icon platforms" src="media/images/xboxdwn.png" alt="" />
-        <img class="icon platforms inv" src="media/images/pcdwn.png" alt="" />
+      <div class="footer__platforms">
+        <img class="footer__platforms__icon" src="media/images/ps5dwn.png" alt="" />
+        <img class="footer__platforms__icon" src="media/images/xboxdwn.png" alt="" />
+        <img class="footer__platforms__icon" src="media/images/pcdwn.png" alt="" />
       </div>
-      <p class="copyright">WB WARNER BROS. GAMES LOGO, WB SHIELD: ™ & © Warner Bros. Entertainment Inc. (s22)</p>
-      <div class="boilerLinks">
-        <a class="boiler" href="">PRIVACY POLICY</a>
-        <a class="boiler" href="">FAQ</a>
-        <a class="boiler" href="">TERMS OF USE</a>
-        <a class="boiler" href="">AD CHOICE</a>
+      <p>WB WARNER BROS. GAMES LOGO, WB SHIELD: ™ & © Warner Bros. Entertainment Inc. (s22)</p>
+      <div class="footer__boilerplate">
+        <a class="footer__boilerplate__link" href="">PRIVACY POLICY</a>
+        <a class="footer__boilerplate__link" href="">FAQ</a>
+        <a class="footer__boilerplate__link" href="">TERMS OF USE</a>
+        <a class="footer__boilerplate__link" href="">AD CHOICE</a>
       </div>
-      <div class="ESRB"><img class="ESRBImg" src="media/images/ESRB.JPG" alt="" /></div>
+      <img class="footer__ESRB" src="media/images/ESRB.JPG" alt="" />
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"

@@ -8,28 +8,27 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,400;0,600;0,700;0,900;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <title>Suicide Squad: Kill The Justice League</title>
     <style>
       .header {
         background-color: transparent;
       }
-      .nav div a {
+      .navBar__preorder {
         color: black;
       }
-      .logo {
+      .header__logo {
         filter: contrast(10%) brightness(5) invert(100%);
       }
-
       @media (max-width: 760px) {
         .header {
           background: rgb(250, 250, 252);
           background: linear-gradient(0deg, rgba(250, 250, 252, 0) 0%, rgba(0, 0, 0, 1) 50%);
         }
-        .nav div a {
+        .navBar div a {
           color: white;
         }
-        .logo {
+        .hedaer__logo {
           filter: contrast(10%) brightness(5);
         }
       }
@@ -37,103 +36,95 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html"><img class="logo" src="media/images/logo.png" alt="" /></a>
-      <nav class="nav">
-        <div class="preorder">
-          <a href="./pre_order.html" class="preorderBtn">PRE ORDER NOW!</a>
-        </div>
-        <div class="navButtons">
-          <a href="./gallery.html" class="navBtn">GALLERY</a>
-          <a href="./community.html" class="navBtn">COMMUNITY</a>
+      <a href="./index.html"><img class="header__logo" src="media/images/logo.png" alt="" /></a>
+      <nav class="navBar">
+        <a href="./pre_order.html" class="navBar__preorder">PRE ORDER NOW!</a>
+        <div class="navBar__btnContainer">
+          <a href="./gallery.html" class="navBar__btn">GALLERY</a>
+          <a href="./community.html" class="navBar__btn">COMMUNITY</a>
         </div>
       </nav>
     </header>
     <section class="hero">
-      <img class="heroImage" src="media/images/main.jpg" alt="" />
-      <div class="heroInfo"><p class="heroText">AVAILABLE JUNE 8TH 2023</p></div>
-      <a href="#trailer" class="scrollBtn">v</a>
+      <img class="hero__cover" src="media/images/main.jpg" alt="" />
+      <div class="hero__info"><p>AVAILABLE JUNE 8TH 2023</p></div>
+      <a href="#trailer" class="hero__scrollBtn">v</a>
     </section>
-    <main class="indexMain">
-      <section id="trailer" class="trailerContainer">
-        <h2 class="trailerTitle">TRAILER</h2>
+    <main>
+      <section id="trailer" class="trailerSection">
+        <h2 class="trailerSection__title">TRAILER</h2>
         <iframe
-          class="trailerVideo"
+          class="trailerSection__video"
           src="https://www.youtube.com/embed/J9vFB65-U_c"
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowfullscreen
         ></iframe>
-        <h3 class="trailerInfo">
+        <h3 class="trailerSection__footer">
           FROM THE CREATORS OF <br class="space" />
           BATMAN: ARKHAM SERIES
         </h3>
-        <p class="trailerText">
+        <p class="trailerSection__info">
           Heroes will fall. The Justice League is no longer the symbol of hope and justice. They have become a threat to humanity, and it's up to you to stop
           them. In this intense, action-packed game, you'll have to use all your skills and cunning to take down the likes of Superman, Batman, and the rest of
           the Justice League. Are you ready for the challenge?
         </p>
       </section>
-      <section class="gameInfo">
+      <section class="boardsSection">
         <div class="board">
-          <img class="boardImg" src="media/images/board1.jpg" alt="" />
-          <div class="boardInfo">
-            <h2 class="boardTitle">PLAY SOLO, CO-OP OR ONLINE</h2>
-            <p class="boardText">
-              Join forces with other players and tackle the Justice League head-on. "Kill the Justice League" features epic cooperative missions where you can
-              team up with your friends and take down the biggest threats in the DC universe. Join the fight and take down the Justice League together!
-            </p>
-          </div>
+          <img class="board__image" src="media/images/board1.jpg" alt="" />
+          <h2 class="board__title">PLAY SOLO, CO-OP OR ONLINE</h2>
+          <p class="board__info">
+            Join forces with other players and tackle the Justice League head-on. "Kill the Justice League" features epic cooperative missions where you can
+            team up with your friends and take down the biggest threats in the DC universe. Join the fight and take down the Justice League together!
+          </p>
         </div>
         <div class="board">
-          <img class="boardImg" src="media/images/board2.jpg" alt="" />
-          <div class="boardInfo">
-            <h2 class="boardTitle">OUTSTANDING GRAPHICS AND IMMERSIVE WORLD</h2>
-            <p class="boardText">
-              Step into a world of breathtaking graphics and intense gameplay in "Kill the Justice League." The game's stunning visuals and realistic physics
-              engine will make you feel like you're right in the middle of the action. Get ready to experience a new level of realism in superhero gaming.
-            </p>
-          </div>
+          <img class="board__image" src="media/images/board2.jpg" alt="" />
+          <h2 class="board__title">OUTSTANDING GRAPHICS AND IMMERSIVE WORLD</h2>
+          <p class="board__info">
+            Step into a world of breathtaking graphics and intense gameplay in "Kill the Justice League." The game's stunning visuals and realistic physics
+            engine will make you feel like you're right in the middle of the action. Get ready to experience a new level of realism in superhero gaming.
+          </p>
         </div>
         <div class="board">
-          <img class="boardImg" src="media/images/board3.jpg" alt="" />
-          <div class="boardInfo">
-            <h2 class="boardTitle">NEXT-GEN COMBAT SYSTEM AND PROGRESSION</h2>
-            <p class="boardText">
-              Get ready for an unforgettable gaming experience as you unleash your powers and take down the Justice League. The combat in "Kill the Justice
-              League" is immersive and intense, allowing you to truly feel like a superhero. Put your skills to the test and take down the biggest threats in
-              the DC universe.
-            </p>
-          </div>
+          <img class="board__image" src="media/images/board3.jpg" alt="" />
+          <h2 class="board__title">NEXT-GEN COMBAT SYSTEM AND PROGRESSION</h2>
+          <p class="board__info">
+            Get ready for an unforgettable gaming experience as you unleash your powers and take down the Justice League. The combat in "Kill the Justice
+            League" is immersive and intense, allowing you to truly feel like a superhero. Put your skills to the test and take down the biggest threats in the
+            DC universe.
+          </p>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="socialsContainer">
-        <img class="icon socials" src="media/images/instagram.png" alt="" />
-        <img class="icon socials" src="media/images/twitter.png" alt="" />
-        <img class="icon socials" src="media/images/facebook.png" alt="" />
-        <img class="icon socials" src="media/images/youtube.png" alt="" />
-        <img class="icon socials" src="media/images/discord.png" alt="" />
+      <div class="footer__socials">
+        <img class="footer__socials__icon" src="media/images/instagram.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/twitter.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/facebook.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/youtube.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/discord.png" alt="" />
       </div>
-      <div class="studiosContainer">
-        <img class="icon studios" src="media/images/wbgames.png" alt="" />
-        <img class="icon studios" src="media/images/dccomics.png" alt="" />
-        <img class="icon studios inv" src="media/images/rocksteady.png" alt="" />
+      <div class="footer__studios">
+        <img class="footer__studios__icon" src="media/images/wbgames.png" alt="" />
+        <img class="footer__studios__icon" src="media/images/dccomics.png" alt="" />
+        <img class="footer__studios__icon" src="media/images/rocksteady.png" alt="" />
       </div>
-      <div class="platformsContainer">
-        <img class="icon platforms inv" src="media/images/ps5dwn.png" alt="" />
-        <img class="icon platforms" src="media/images/xboxdwn.png" alt="" />
-        <img class="icon platforms inv" src="media/images/pcdwn.png" alt="" />
+      <div class="footer__platforms">
+        <img class="footer__platforms__icon" src="media/images/ps5dwn.png" alt="" />
+        <img class="footer__platforms__icon" src="media/images/xboxdwn.png" alt="" />
+        <img class="footer__platforms__icon" src="media/images/pcdwn.png" alt="" />
       </div>
-      <p class="copyright">WB WARNER BROS. GAMES LOGO, WB SHIELD: ™ & © Warner Bros. Entertainment Inc. (s22)</p>
-      <div class="boilerLinks">
-        <a class="boiler" href="">PRIVACY POLICY</a>
-        <a class="boiler" href="">FAQ</a>
-        <a class="boiler" href="">TERMS OF USE</a>
-        <a class="boiler" href="">AD CHOICE</a>
+      <p>WB WARNER BROS. GAMES LOGO, WB SHIELD: ™ & © Warner Bros. Entertainment Inc. (s22)</p>
+      <div class="footer__boilerplate">
+        <a class="footer__boilerplate__link" href="">PRIVACY POLICY</a>
+        <a class="footer__boilerplate__link" href="">FAQ</a>
+        <a class="footer__boilerplate__link" href="">TERMS OF USE</a>
+        <a class="footer__boilerplate__link" href="">AD CHOICE</a>
       </div>
-      <div class="ESRB"><img class="ESRBImg" src="media/images/ESRB.JPG" alt="" /></div>
+      <img class="footer__ESRB" src="media/images/ESRB.JPG" alt="" />
     </footer>
   </body>
 </html>

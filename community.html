@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,400;0,600;0,700;0,900;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <style>
       .pageTitle::after {
         background-image: url(../media/images/decoration1.png);
@@ -19,33 +19,25 @@
   </head>
   <body>
     <header class="header">
-      <a href="./index.html"><img class="logo" src="media/images/logo.png" alt="" /></a>
-      <nav class="nav">
-        <div class="preorder">
-          <a href="./pre_order.html" class="preorderBtn">PRE ORDER NOW!</a>
-        </div>
-        <div class="navButtons">
-          <a href="./gallery.html" class="navBtn">GALLERY</a>
-          <a href="./community.html" class="navBtn">COMMUNITY</a>
+      <a href="./index.html"><img class="header__logo" src="media/images/logo.png" alt="" /></a>
+      <nav class="navBar">
+        <a href="./pre_order.html" class="navBar__preorder">PRE ORDER NOW!</a>
+        <div class="navBar__btnContainer">
+          <a href="./gallery.html" class="navBar__btn">GALLERY</a>
+          <a href="./community.html" class="navBar__btn">COMMUNITY</a>
         </div>
       </nav>
     </header>
     <main>
       <h1 class="pageTitle">COMMUNITY</h1>
-      <section class="callToAction">
-        <div class="btnContainer">
-          <button class="actionBtn">DOWNLOAD WALLPAPERS</button>
-        </div>
-        <div class="btnContainer">
-          <button class="actionBtn">CHECK OUT OUR DISCORD</button>
-        </div>
-        <div class="btnContainer">
-          <button class="actionBtn">FOLLOW US ON OUR SOCIALS</button>
-        </div>
+      <section class="actionSection">
+        <button class="actionSection__btn">DOWNLOAD WALLPAPERS</button>
+        <button class="actionSection__btn">CHECK OUT OUR DISCORD</button>
+        <button class="actionSection__btn">FOLLOW US ON OUR SOCIALS</button>
       </section>
-      <h3 class="postName">LATEST POSTS</h3>
+      <h3 class="postSection__Title">LATEST POSTS</h3>
       <section class="postSection">
-        <div class="postCard">
+        <div class="postSection__post">
           <blockquote class="twitter-tweet" data-theme="dark"
             ><p lang="en" dir="ltr"
               >We&#39;re baaaaaaack! Task Force X is ready for official deployment on 5.26.23.
@@ -111,31 +103,31 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="socialsContainer">
-        <img class="icon socials" src="media/images/instagram.png" alt="" />
-        <img class="icon socials" src="media/images/twitter.png" alt="" />
-        <img class="icon socials" src="media/images/facebook.png" alt="" />
-        <img class="icon socials" src="media/images/youtube.png" alt="" />
-        <img class="icon socials" src="media/images/discord.png" alt="" />
+      <div class="footer__socials">
+        <img class="footer__socials__icon" src="media/images/instagram.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/twitter.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/facebook.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/youtube.png" alt="" />
+        <img class="footer__socials__icon" src="media/images/discord.png" alt="" />
       </div>
-      <div class="studiosContainer">
-        <img class="icon studios" src="media/images/wbgames.png" alt="" />
-        <img class="icon studios" src="media/images/dccomics.png" alt="" />
-        <img class="icon studios inv" src="media/images/rocksteady.png" alt="" />
+      <div class="footer__studios">
+        <img class="footer__studios__icon" src="media/images/wbgames.png" alt="" />
+        <img class="footer__studios__icon" src="media/images/dccomics.png" alt="" />
+        <img class="footer__studios__icon" src="media/images/rocksteady.png" alt="" />
       </div>
-      <div class="platformsContainer">
-        <img class="icon platforms inv" src="media/images/ps5dwn.png" alt="" />
-        <img class="icon platforms" src="media/images/xboxdwn.png" alt="" />
-        <img class="icon platforms inv" src="media/images/pcdwn.png" alt="" />
+      <div class="footer__platforms">
+        <img class="footer__platforms__icon" src="media/images/ps5dwn.png" alt="" />
+        <img class="footer__platforms__icon" src="media/images/xboxdwn.png" alt="" />
+        <img class="footer__platforms__icon" src="media/images/pcdwn.png" alt="" />
       </div>
-      <p class="copyright">WB WARNER BROS. GAMES LOGO, WB SHIELD: ™ & © Warner Bros. Entertainment Inc. (s22)</p>
-      <div class="boilerLinks">
-        <a class="boiler" href="">PRIVACY POLICY</a>
-        <a class="boiler" href="">FAQ</a>
-        <a class="boiler" href="">TERMS OF USE</a>
-        <a class="boiler" href="">AD CHOICE</a>
+      <p>WB WARNER BROS. GAMES LOGO, WB SHIELD: ™ & © Warner Bros. Entertainment Inc. (s22)</p>
+      <div class="footer__boilerplate">
+        <a class="footer__boilerplate__link" href="">PRIVACY POLICY</a>
+        <a class="footer__boilerplate__link" href="">FAQ</a>
+        <a class="footer__boilerplate__link" href="">TERMS OF USE</a>
+        <a class="footer__boilerplate__link" href="">AD CHOICE</a>
       </div>
-      <div class="ESRB"><img class="ESRBImg" src="media/images/ESRB.JPG" alt="" /></div>
+      <img class="footer__ESRB" src="media/images/ESRB.JPG" alt="" />
     </footer>
   </body>
 </html>
