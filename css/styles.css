@@ -670,7 +670,14 @@ main {
     width: 100vw; }
     .postSection__post {
       gap: 0;
-      width: 80vw; } }
+      width: 80vw; }
+  .accordion-button::after {
+    margin-left: 10px; }
+  .faqQuestion {
+    padding: 15px;
+    width: 90vw; }
+  .faqAnswer {
+    width: 90vw; } }
 
 @media (max-width: 1080px) {
   .navBar__btn,
@@ -692,8 +699,6 @@ main {
     width: 100%;
     padding: 0 50px 50px 50px;
     margin-top: -30px; }
-  .accordion-button {
-    padding: 0; }
   .requirements {
     margin-bottom: 1rem; }
   /* COMMUNITY */

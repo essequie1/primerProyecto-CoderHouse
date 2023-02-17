@@ -843,6 +843,19 @@ main {
       width: 80vw;
     }
   }
+
+  // FAQ
+  .accordion-button::after {
+    margin-left: 10px;
+  }
+
+  .faqQuestion {
+    padding: 15px;
+    width: 90vw;
+  }
+  .faqAnswer {
+    width: 90vw;
+  }
 }
 
 @media (max-width: 1080px) {
@@ -877,10 +890,6 @@ main {
     width: 100%;
     padding: 0 50px 50px 50px;
     margin-top: -30px;
-  }
-
-  .accordion-button {
-    padding: 0;
   }
 
   .requirements {
