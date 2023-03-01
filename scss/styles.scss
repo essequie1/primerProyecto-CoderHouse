@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: "Barlow Condensed", sans-serif;
-  scroll-behavior: smooth;
+  font-display: auto;
 }
 
 main {
@@ -255,6 +255,7 @@ main {
   &__info {
     width: 50vw;
     text-align: center;
+    font-weight: 200;
     font-size: 1.25rem;
   }
 }
@@ -855,6 +856,15 @@ main {
   }
   .faqAnswer {
     width: 90vw;
+  }
+}
+
+@media (max-width: 1500px) {
+  .board {
+    width: 70vw;
+  }
+  .cardsSection {
+    gap: 5rem;
   }
 }
 
